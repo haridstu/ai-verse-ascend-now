@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +14,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black font-outfit">
+    <div className="min-h-screen font-outfit">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -76,7 +75,7 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="relative">
             <div className="absolute inset-0 bg-[#38ceac]/20 blur-3xl rounded-full"></div>
-            <h1 className="relative text-6xl md:text-8xl font-bold mb-6 text-[#38ceac] animate-fade-in font-outfit">
+            <h1 className="relative text-4xl md:text-5xl font-bold mb-6 text-[#38ceac] animate-fade-in font-outfit">
               Learn AI.
               <br />
               Build Tomorrow.
