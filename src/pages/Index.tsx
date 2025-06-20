@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,28 +15,28 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 font-['Inter',_'system-ui',_sans-serif]">
+    <div className="min-h-screen bg-black font-outfit">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-              <Brain className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 bg-[#38ceac] rounded-lg flex items-center justify-center">
+              <Brain className="w-5 h-5 text-black" />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-['Poppins',_sans-serif]">
+            <span className="text-2xl font-bold text-[#38ceac] font-outfit">
               AIVerse
             </span>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#courses" className="text-gray-300 hover:text-white transition-colors font-medium">Courses</a>
-            <a href="#tools" className="text-gray-300 hover:text-white transition-colors font-medium">Tools</a>
-            <a href="#community" className="text-gray-300 hover:text-white transition-colors font-medium">Community</a>
+            <a href="#courses" className="text-gray-300 hover:text-[#38ceac] transition-colors font-medium">Courses</a>
+            <a href="#tools" className="text-gray-300 hover:text-[#38ceac] transition-colors font-medium">Tools</a>
+            <a href="#community" className="text-gray-300 hover:text-[#38ceac] transition-colors font-medium">Community</a>
             {user ? (
               <div className="flex items-center space-x-4">
                 <Button
                   variant="outline"
                   onClick={() => navigate('/dashboard')}
-                  className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10"
+                  className="border-[#38ceac]/50 text-[#38ceac] hover:bg-[#38ceac]/10"
                 >
                   <User className="w-4 h-4 mr-2" />
                   Dashboard
@@ -54,13 +55,13 @@ const Index = () => {
                 <Button
                   variant="outline"
                   onClick={() => navigate('/auth')}
-                  className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10"
+                  className="border-[#38ceac]/50 text-[#38ceac] hover:bg-[#38ceac]/10"
                 >
                   Login
                 </Button>
                 <Button
                   onClick={() => navigate('/auth')}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black font-semibold"
                 >
                   Start Learning
                 </Button>
@@ -74,8 +75,8 @@ const Index = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto text-center">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/30 to-purple-600/30 blur-3xl rounded-full"></div>
-            <h1 className="relative text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-fade-in font-['Poppins',_sans-serif]">
+            <div className="absolute inset-0 bg-[#38ceac]/20 blur-3xl rounded-full"></div>
+            <h1 className="relative text-6xl md:text-8xl font-bold mb-6 text-[#38ceac] animate-fade-in font-outfit">
               Learn AI.
               <br />
               Build Tomorrow.
@@ -89,7 +90,7 @@ const Index = () => {
               <Button
                 size="lg"
                 onClick={() => navigate('/dashboard')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6 font-semibold"
+                className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black text-lg px-8 py-6 font-semibold"
               >
                 <User className="w-5 h-5 mr-2" />
                 Go to Dashboard
@@ -98,13 +99,13 @@ const Index = () => {
               <Button
                 size="lg"
                 onClick={() => navigate('/auth')}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6 font-semibold"
+                className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black text-lg px-8 py-6 font-semibold"
               >
                 <Play className="w-5 h-5 mr-2" />
                 Start Learning Now
               </Button>
             )}
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-6 font-semibold">
+            <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-gray-800 text-lg px-8 py-6 font-semibold">
               Explore Courses
               <ChevronRight className="w-5 h-5 ml-2" />
             </Button>
@@ -116,20 +117,20 @@ const Index = () => {
       <section className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <div className="text-3xl font-bold text-blue-400 mb-2 font-['Poppins',_sans-serif]">50K+</div>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800">
+              <div className="text-3xl font-bold text-[#38ceac] mb-2 font-outfit">50K+</div>
               <div className="text-gray-300 font-medium">Students</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <div className="text-3xl font-bold text-purple-400 mb-2 font-['Poppins',_sans-serif]">200+</div>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800">
+              <div className="text-3xl font-bold text-[#38ceac] mb-2 font-outfit">200+</div>
               <div className="text-gray-300 font-medium">Courses</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <div className="text-3xl font-bold text-pink-400 mb-2 font-['Poppins',_sans-serif]">15+</div>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800">
+              <div className="text-3xl font-bold text-[#38ceac] mb-2 font-outfit">15+</div>
               <div className="text-gray-300 font-medium">AI Tools</div>
             </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10">
-              <div className="text-3xl font-bold text-green-400 mb-2 font-['Poppins',_sans-serif]">98%</div>
+            <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800">
+              <div className="text-3xl font-bold text-[#38ceac] mb-2 font-outfit">98%</div>
               <div className="text-gray-300 font-medium">Success Rate</div>
             </div>
           </div>
@@ -140,7 +141,7 @@ const Index = () => {
       <section id="courses" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-['Poppins',_sans-serif]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#38ceac] font-outfit">
               Featured Courses
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
@@ -177,7 +178,7 @@ const Index = () => {
                 icon: Eye
               }
             ].map((course, index) => (
-              <Card key={index} className="bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 group">
+              <Card key={index} className="bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 group">
                 <div className="relative h-48 rounded-t-lg overflow-hidden">
                   <img
                     src={`https://images.unsplash.com/${course.image}?w=400&h=300&fit=crop`}
@@ -185,7 +186,7 @@ const Index = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                  <Badge className="absolute top-4 left-4 bg-blue-600/80 text-white font-medium">
+                  <Badge className="absolute top-4 left-4 bg-[#38ceac] text-black font-medium">
                     {course.level}
                   </Badge>
                   <div className="absolute bottom-4 left-4 flex items-center text-white">
@@ -194,15 +195,15 @@ const Index = () => {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-white font-['Poppins',_sans-serif]">{course.title}</CardTitle>
+                  <CardTitle className="text-white font-outfit">{course.title}</CardTitle>
                   <CardDescription className="text-gray-300 font-light">
                     {course.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-green-400 font-['Poppins',_sans-serif]">{course.price}</span>
-                    <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 font-semibold">
+                    <span className="text-2xl font-bold text-[#38ceac] font-outfit">{course.price}</span>
+                    <Button className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black font-semibold">
                       Enroll Now
                     </Button>
                   </div>
@@ -214,10 +215,10 @@ const Index = () => {
       </section>
 
       {/* Tools Section */}
-      <section id="tools" className="py-20 px-4 bg-black/20">
+      <section id="tools" className="py-20 px-4 bg-gray-900/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-['Poppins',_sans-serif]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#38ceac] font-outfit">
               AI Tools Hub
             </h2>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
@@ -231,14 +232,14 @@ const Index = () => {
               { name: "GitHub Copilot", icon: Code, category: "Code Assistant" },
               { name: "Claude", icon: Brain, category: "AI Assistant" }
             ].map((tool, index) => (
-              <Card key={index} className="bg-white/5 backdrop-blur-sm border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 group cursor-pointer">
+              <Card key={index} className="bg-gray-900/50 backdrop-blur-sm border-gray-800 hover:bg-gray-800/50 transition-all duration-300 hover:scale-105 group cursor-pointer">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <tool.icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 mx-auto mb-4 bg-[#38ceac] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <tool.icon className="w-8 h-8 text-black" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-2 font-['Poppins',_sans-serif]">{tool.name}</h3>
+                  <h3 className="text-xl font-semibold text-white mb-2 font-outfit">{tool.name}</h3>
                   <p className="text-gray-400 text-sm font-medium">{tool.category}</p>
-                  <Button variant="outline" className="mt-4 border-blue-500/50 text-blue-400 hover:bg-blue-500/10 w-full font-semibold">
+                  <Button variant="outline" className="mt-4 border-[#38ceac]/50 text-[#38ceac] hover:bg-[#38ceac]/10 w-full font-semibold">
                     Learn More
                   </Button>
                 </CardContent>
@@ -252,7 +253,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-['Poppins',_sans-serif]">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#38ceac] font-outfit">
               What Our Students Say
             </h2>
           </div>
@@ -277,7 +278,7 @@ const Index = () => {
                 rating: 5
               }
             ].map((testimonial, index) => (
-              <Card key={index} className="bg-white/5 backdrop-blur-sm border-white/10">
+              <Card key={index} className="bg-gray-900/50 backdrop-blur-sm border-gray-800">
                 <CardContent className="p-6">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -286,7 +287,7 @@ const Index = () => {
                   </div>
                   <p className="text-gray-300 mb-4 font-light italic">"{testimonial.content}"</p>
                   <div>
-                    <div className="font-semibold text-white font-['Poppins',_sans-serif]">{testimonial.name}</div>
+                    <div className="font-semibold text-white font-outfit">{testimonial.name}</div>
                     <div className="text-sm text-gray-400 font-medium">{testimonial.role}</div>
                   </div>
                 </CardContent>
@@ -297,9 +298,9 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-900/50 to-purple-900/50">
+      <section className="py-20 px-4 bg-gray-900/30">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-['Poppins',_sans-serif]">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-outfit">
             Ready to Shape the Future?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-light">
@@ -309,7 +310,7 @@ const Index = () => {
             <Button
               size="lg"
               onClick={() => navigate('/dashboard')}
-              className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-lg px-12 py-6 font-semibold"
+              className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black text-lg px-12 py-6 font-semibold"
             >
               <User className="w-5 h-5 mr-2" />
               Continue Learning
@@ -318,7 +319,7 @@ const Index = () => {
             <Button
               size="lg"
               onClick={() => navigate('/auth')}
-              className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-lg px-12 py-6 font-semibold"
+              className="bg-[#38ceac] hover:bg-[#38ceac]/80 text-black text-lg px-12 py-6 font-semibold"
             >
               <Zap className="w-5 h-5 mr-2" />
               Start Learning Now
@@ -328,44 +329,44 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-black/40 border-t border-white/10">
+      <footer className="py-12 px-4 bg-gray-900/50 border-t border-gray-800">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <Brain className="w-5 h-5 text-white" />
+                <div className="w-8 h-8 bg-[#38ceac] rounded-lg flex items-center justify-center">
+                  <Brain className="w-5 h-5 text-black" />
                 </div>
-                <span className="text-xl font-bold text-white font-['Poppins',_sans-serif]">AIVerse</span>
+                <span className="text-xl font-bold text-white font-outfit">AIVerse</span>
               </div>
               <p className="text-gray-400 font-light">Learn AI. Build Tomorrow.</p>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4 font-['Poppins',_sans-serif]">Courses</h3>
+              <h3 className="text-white font-semibold mb-4 font-outfit">Courses</h3>
               <ul className="space-y-2 text-gray-400 font-medium">
-                <li><a href="#" className="hover:text-white transition-colors">Prompt Engineering</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Machine Learning</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Computer Vision</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Prompt Engineering</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Machine Learning</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Computer Vision</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4 font-['Poppins',_sans-serif]">Tools</h3>
+              <h3 className="text-white font-semibold mb-4 font-outfit">Tools</h3>
               <ul className="space-y-2 text-gray-400 font-medium">
-                <li><a href="#" className="hover:text-white transition-colors">ChatGPT Guide</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Midjourney Tutorial</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">GitHub Copilot</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">ChatGPT Guide</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Midjourney Tutorial</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">GitHub Copilot</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4 font-['Poppins',_sans-serif]">Community</h3>
+              <h3 className="text-white font-semibold mb-4 font-outfit">Community</h3>
               <ul className="space-y-2 text-gray-400 font-medium">
-                <li><a href="#" className="hover:text-white transition-colors">Discord</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Forum</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Discord</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Forum</a></li>
+                <li><a href="#" className="hover:text-[#38ceac] transition-colors">Blog</a></li>
               </ul>
             </div>
           </div>
-          <div className="mt-8 pt-8 border-t border-white/10 text-center text-gray-400 font-light">
+          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400 font-light">
             <p>&copy; 2024 AIVerse. All rights reserved.</p>
           </div>
         </div>
